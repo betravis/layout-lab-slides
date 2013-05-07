@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Layout on the Web: What's New</title>
+
+        <meta name="description" content="A lab demoing some of the cool new features available in the browser">
+        <meta name="author" content="Bear Travis">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="reveal.js/css/reveal.min.css">
+        <!--<link rel="stylesheet" href="reveal.js/css/theme/default.css" id="theme">-->
+        <link rel='stylesheet' href='css/theme/bear.css'>
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+            document.write( '<link rel="stylesheet" href="reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+        <style>
+            .title > h1, .title > div {
+                display: inline-block;
+            }
+            .title > h2, .title > h3 {
+                display: inline-block;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+                <section>
+                    <div class='title'>
+                        <h1>Layout</h1>
+                        <div><div>on</div><div>the</div></div>
+                        <h1>Web</h1>
+                    </div>
+                    <div class='title'>
+                        <h1>What's New</h1>
+                    </div>
+                    <p>
+                        <small>Bear Travis / <a href="http://twitter.com/bear_travis">@bear_travis</a></small>
+                    </p>
+                </section>
+                
+                <section>
+                    <h2 style='position: absolute; left: 0; right: 0; top: 1em; text-align: center; color: rgb(36, 39, 41)'>About Us</h2>
+                    <img src='resources/web-engine-team.jpg' alt='Web Engine Team' />
+                </section>
+
+                <section>
+                    <h2>About the Lab</h2>
+                </section>
+
+                <section>
+                    <h2>To the Labmobile!</h2>
+                </section>
+
+                <section>
+                    <h1>Q/A</h1>
+                    <p>
+                        <small>Bear Travis / <a href="http://twitter.com/bear_travis">@bear_travis</a></small>
+                    </p>
+                </section>
+
+            </div>
+
+        </div>
+
+        <script src="reveal.js/lib/js/head.min.js"></script>
+        <script src="reveal.js/js/reveal.min.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'reveal.js/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                    // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+                    // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+        </script>
+<script type="text/javascript" src="//use.typekit.net/tdh5xte.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    </body>
+</html>
